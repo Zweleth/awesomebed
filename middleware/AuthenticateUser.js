@@ -33,3 +33,5 @@ function verifyAToken(req, res, next) {
         res.status(400).json({err: e.message});
     }
 }
+
+module.exports = {verifyAToken, createToken }
